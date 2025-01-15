@@ -1,0 +1,124 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 2rem auto;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #2C3E50;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+p, h3 {
+    font-size: 1rem;
+    color: #4A4A4A;
+    margin-bottom: 0.5rem;
+}
+
+.rating-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.circle-container {
+    text-align: center;
+    flex: 1;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border: 3px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background-color: #fff; /* Fundo padrão */
+    transition: all 0.3s ease;
+    color: inherit; /* Garante que a cor do texto seja herdada */
+}
+
+/* Hover */
+.circle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Cores específicas */
+.circle-atendente-1, .circle-recomendacao-1 { border-color: #E74C3C; color: #E74C3C; }
+.circle-atendente-2, .circle-recomendacao-2 { border-color: #F39C12; color: #F39C12; }
+.circle-atendente-3, .circle-recomendacao-3 { border-color: #F1C40F; color: #F1C40F; }
+.circle-atendente-4, .circle-recomendacao-4 { border-color: #27AE60; color: #27AE60; }
+.circle-atendente-5, .circle-recomendacao-5 { border-color: #2ECC71; color: #2ECC71; }
+
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #fafafa;
+    resize: none;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #3498DB;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+button {
+    width: 100%;
+    background-color: #27AE60;
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #219150;
+}
+
+.logo {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Alinha verticalmente */
+    margin-bottom: 10px;     /* Espaçamento inferior */
+}
+
+.logo-img {
+    max-width: 150px; /* Ajuste o tamanho máximo */
+    height: auto;     /* Mantém a proporção da imagem */
+}
